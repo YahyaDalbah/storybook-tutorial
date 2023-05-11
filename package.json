@@ -14,8 +14,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5"
   },
   "scripts": {
     "dev": "vite",
@@ -26,6 +28,7 @@
     "init-msw": "msw init public/"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.0.10",
     "@storybook/addon-essentials": "^7.0.6",
     "@storybook/addon-interactions": "^7.0.6",
     "@storybook/addon-links": "^7.0.6",
