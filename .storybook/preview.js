@@ -1,7 +1,13 @@
 /** @type { import('@storybook/react').Preview } */
+// Registers the msw addon
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+
+// Initialize MSW
+initialize();
 import "../src/index.css";
 const preview = {
   parameters: {
+    decorators: [mswDecorator],
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
